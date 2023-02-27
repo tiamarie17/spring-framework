@@ -4,7 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
     public static void main(String args[]){
-        //loading Appconfig class into application context
+        //loading AppConfig class into application context
         //will register two beans (speakerService and speakerRepository)
         ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
 //        SpeakerService service = new SpeakerServiceImpl(); w/o Spring
