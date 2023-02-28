@@ -63,6 +63,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="conference-java-spring" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

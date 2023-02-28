@@ -3,6 +3,7 @@ package com.pluralsight.repository;
 import com.pluralsight.model.Speaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 @Repository("speakerRepository")
+@Profile("dev") //set up to only run in dev since we don't have a db set up, will not get deployed into production
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 
     @Autowired
